@@ -5,6 +5,8 @@
     $textFormCensored = str_replace('Culpa', '***', $textForm);
     $lengthMess = strlen($textForm);
     $lengthMessCensored = strlen($textFormCensored);
+
+    /* var_dump( $lengthMessCensored ) */
     
 ?>
 <!-- end: PHP -->
@@ -16,7 +18,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saluto PHP</title>
+    <title>Messaggio PHP</title>
 </head>
 <body>
     
