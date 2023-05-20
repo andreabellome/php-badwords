@@ -3,6 +3,7 @@
 
     $textForm = trim($_POST['message']);
     $textFormCensored = str_replace('Culpa', '***', $textForm);
+    $lengthMess = strlen($textForm);
 
 ?>
 <!-- end: PHP -->
@@ -18,19 +19,23 @@
 </head>
 <body>
     
-
     <div style="border: 2px dashed red;">
         
+        <!-- start: testo originale -->
         <span>Il testo originale qui di seguito:</span>
-
-        <br> <br>
         
-        <span>
+        <p>
             <?php echo $textForm ?>
+        </p>
+
+        <span>
+            Il numero di caratteri è: <?php echo $lengthMess ?>
         </span>
+        <!-- end: testo originale -->
 
         <br> <br>
 
+        <!-- start: testo censurato -->
         <span>Il testo censurato qui di seguito:</span>
 
         <br> <br>
@@ -38,6 +43,7 @@
         <span>
             <?php echo $textFormCensored ?>
         </span>
+        <!-- end: testo censurato -->
         
     </div>
 
